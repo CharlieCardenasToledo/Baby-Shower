@@ -55,7 +55,7 @@ function doPost(e) {
 
 const CONFIG = {
   // Pega aquí la URL de tu Google Apps Script
-  GOOGLE_SCRIPT_URL: 'https://script.google.com/macros/s/AKfycbz9lSH8k1jHOmpv6Amg0xWrnpg_BXIFNrenSGSeA0joTJhIFmp6_3Lf9UlKTv9srdW7DA/exec',
+  GOOGLE_SCRIPT_URL: 'https://script.google.com/macros/s/AKfycbwW10c0hLPvk9w2v2qusDluXjGO7_pMqAZEudVi2CIRQ_Rd5I5Q3TSYZ1fRForUAs86_Q/exec',
 
   // Configuración del mapa (opcional)
   MAP_URL: 'https://maps.google.com/?q=Calle+Segundo+Ruiz+Padre+Juan+Gonzales+UTPL+Loja',
