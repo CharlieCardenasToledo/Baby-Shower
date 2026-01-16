@@ -58,7 +58,7 @@ const CONFIG = {
   GOOGLE_SCRIPT_URL: 'https://script.google.com/macros/s/AKfycbwW10c0hLPvk9w2v2qusDluXjGO7_pMqAZEudVi2CIRQ_Rd5I5Q3TSYZ1fRForUAs86_Q/exec',
 
   // Configuración del mapa (opcional)
-  MAP_URL: 'https://maps.google.com/?q=Calle+Segundo+Ruiz+Padre+Juan+Gonzales+UTPL+Loja',
+  MAP_URL: 'https://www.google.com/maps/place/Segundo+Ruiz,+Zamora/@-4.0622691,-78.9506404,18.73z/data=!4m6!3m5!1s0x91cb1417b667b683:0x7141ada569630823!8m2!3d-4.0625683!4d-78.9501518!16s%2Fg%2F11hyy0j_gt?entry=ttu',
 
   // Configuración de compartir
   SHARE_TEXT: '¡Estás invitado al Baby Shower de Elias Alessandro! 🎉',
