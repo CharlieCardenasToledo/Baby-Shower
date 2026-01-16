@@ -13,7 +13,6 @@
         btnBack: document.getElementById('btnBack'),
         btnShare: document.getElementById('btnShare'),
         btnRsvp: document.getElementById('btnRsvp'),
-        mapPreview: document.getElementById('mapPreview'),
 
         // Modal
         modal: document.getElementById('rsvpModal'),
@@ -159,10 +158,6 @@
         });
     }
 
-    // Mapa
-    elements.mapPreview.addEventListener('click', () => {
-        window.open(window.APP_CONFIG.MAP_URL, '_blank');
-    });
 
     // Abrir modal
     elements.btnRsvp.addEventListener('click', openModal);
