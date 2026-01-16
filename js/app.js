@@ -207,6 +207,11 @@
                 // Mostrar mensaje de éxito
                 showSuccess();
 
+                // Trigger confetti celebration
+                if (window.triggerConfetti) {
+                    window.triggerConfetti();
+                }
+
                 // Log para debugging
                 console.log('✅ Confirmación enviada:', formData);
             } else {

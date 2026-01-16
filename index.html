@@ -17,6 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet">
 
+    <!-- Animations CSS -->
+    <link rel="stylesheet" href="css/animations.css">
+
     <!-- TailwindCSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script>
@@ -63,6 +66,12 @@
 </head>
 
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white antialiased font-display">
+    <!-- Scroll Progress Bar -->
+    <div id="scrollProgress" style="width: 0%;"></div>
+
+    <!-- Floating Particles -->
+    <div id="particles"></div>
+
     <div class="relative flex h-auto min-h-screen w-full max-w-md mx-auto flex-col overflow-x-hidden shadow-2xl">
         <!-- Header -->
         <div
@@ -83,7 +92,7 @@
         </div>
 
         <!-- Hero Image -->
-        <div class="@container px-4 py-3">
+        <div class="@container px-4 py-3 animate-on-scroll">
             <div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-xl min-h-[360px] shadow-lg relative border border-primary/20"
                 style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuChl0Zp9MN7yR4EVyoEudia4zkGxbN_E_gFa3aThzNRtVFpNrAFj3-3wGqfSxIDuRnxAN6lVGBy0CAJyl_SKakiVx5Ww2WAarjCIt3AaCbd3fX637cEhwGK7_7utNq0mBbVIxjRsZjSFb3Bad9Jh4ZEghQU-qcIr0bT_D_3de-WLseVHitKAf9rAa2KutS1W5CDmT3VLX9O5XWV_oMRZilV9l0baDqkGH4ymn6mtVtJJpq9CYcdgKuRqz6NVei6WhMHl--xuXkE8RFD");'>
                 <div
@@ -99,7 +108,7 @@
         </div>
 
         <!-- Main Title -->
-        <div class="px-4 pb-2 pt-4 text-center">
+        <div class="px-4 pb-2 pt-4 text-center animate-on-scroll">
             <h1 class="text-slate-900 dark:text-white tracking-tight text-[32px] font-bold leading-[1.1]">
                 ¡Un pequeño <span class="text-primary">Saiyajin</span> está en camino!
             </h1>
@@ -109,7 +118,7 @@
         </div>
 
         <!-- Baby Info Card -->
-        <div class="p-4">
+        <div class="p-4 animate-on-scroll">
             <div
                 class="relative overflow-hidden rounded-2xl bg-slate-100 dark:bg-[#2a2418] shadow-lg border border-primary/30">
                 <div class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-primary/10 blur-3xl"></div>
@@ -138,8 +147,32 @@
             </div>
         </div>
 
+        <!-- Countdown Timer -->
+        <div class="countdown-section animate-on-scroll" id="countdown">
+            <h3 class="text-center text-2xl font-bold mb-2 text-slate-900 dark:text-white">⏰ Cuenta Regresiva</h3>
+            <p class="text-center text-sm text-slate-500 dark:text-[#cbb690] mb-4">Faltan:</p>
+            <div class="countdown-grid">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">00</span>
+                    <span class="countdown-label">Días</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">00</span>
+                    <span class="countdown-label">Horas</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">00</span>
+                    <span class="countdown-label">Minutos</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">00</span>
+                    <span class="countdown-label">Segundos</span>
+                </div>
+            </div>
+        </div>
+
         <!-- Event Details -->
-        <div class="px-4 py-2">
+        <div class="px-4 py-2 animate-on-scroll">
             <div
                 class="grid grid-cols-[auto_1fr] gap-x-4 bg-white dark:bg-[#2a2418]/50 rounded-xl p-5 border border-slate-200 dark:border-[#685531]/30">
                 <div class="flex items-start justify-center pt-1">
@@ -291,6 +324,7 @@
 
     <!-- Scripts -->
     <script src="js/config.js"></script>
+    <script src="js/animations.js"></script>
     <script src="js/app.js"></script>
 </body>
 
